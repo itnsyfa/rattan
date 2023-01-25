@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmant_main.ChatFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:padding="15dp"
+
+           android:orientation="horizontal">
+           <ImageView
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+
+               android:src="@mipmap/ic_launcher_round"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_gravity="center"
+               android:layout_marginLeft="10dp"
+               android:padding="10dp"
+               android:background="#E6E6E6"
+               android:text="Halo kak ada yang bisa saya bantu?"/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:gravity="end"
+           android:padding="15dp"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_gravity="center"
+               android:layout_marginRight="10dp"
+               android:padding="10dp"
+               android:background="#E6E6E6"
+               android:text="Adakak"/>
+           <ImageView
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+
+               android:src="@mipmap/ic_launcher_round"/>
+
+       </LinearLayout>
+
+   </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_weight=".50"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_baseline_image_24"
+                android:contentDescription="image"/>
+            <EditText
+                android:id="@+id/editTextChat"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_chat_edit_text"
+
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Type Here"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent" />
+            <ImageButton
+
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:backgroundTint="@color/brown"
+                android:contentDescription="Send"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

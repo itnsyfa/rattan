@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="257dp"
+            android:layout_height="85dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sign In"
+            android:textColor="@color/black"
+            android:layout_marginTop="50dp"
+
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/TextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_edit_text"
+            android:ems="10"
+            android:layout_marginTop="50dp"
+            android:hint="Enter your email"
+            android:inputType="textPersonName"
+            android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/TextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+
+            android:background="@drawable/custom_edit_text"
+            android:ems="10"
+            android:hint="Enter your password"
+            android:inputType="textPersonName"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Sign In"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/brown"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="Doesn't have account yet? Register" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

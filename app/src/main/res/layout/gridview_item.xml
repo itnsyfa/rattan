@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:layout_margin="50dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp">
+
+    <!--on below line we are creating
+        a linear layout for grid view item-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <!--on below line we are creating
+             a simple image view-->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/idGambarProduk"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/CornerCut"
+            android:layout_margin="5dp"
+            android:padding="4dp"
+            android:src="@mipmap/ic_launcher"/>
+
+
+        <!--on below line we are creating
+            a simple text view-->
+        <TextView
+            android:id="@+id/idNamaProduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Kursi Rotan"
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/idKatagoriProduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10dp"
+            android:textSize="13dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Kursi Modern"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/idHargaProduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Kursi Rotan"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
